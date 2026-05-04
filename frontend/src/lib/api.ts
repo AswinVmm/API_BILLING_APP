@@ -1,7 +1,7 @@
 import wretch from "wretch";
 
 // Base instance
-const api = wretch("http://localhost:5000");
+const api = wretch(process.env.BACKEND_URL);
 
 // Helper to add token
 export const withAuth = () => {
